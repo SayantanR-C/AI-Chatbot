@@ -1,0 +1,364 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey", "Good morning", "Good evening"],
+      "responses": ["Hello!", "Hi there!", "Greetings!", "How can I help you today?"],
+      "context": [""]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "Goodbye", "See you later", "Talk to you soon"],
+      "responses": ["Goodbye!", "Take care!", "See you later!", "Feel free to ask if you need anything else."],
+      "context": [""]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "Thanks a lot", "Appreciate it"],
+      "responses": ["You're welcome!", "Happy to help!", "Anytime!", "Glad I could help!"],
+      "context": [""]
+    },
+    {
+      "tag": "noanswer",
+      "patterns": ["...", "Hmm", "I don't know what to say", "Can you repeat?"],
+      "responses": ["I'm here to help. Could you please rephrase?", "Sorry, I didn't catch that. Try asking in a different way."],
+      "context": [""]
+    },
+    {
+      "tag": "options",
+      "patterns": ["What can you do?", "Help", "Show options", "List of features?"],
+      "responses": ["I can provide medical info, symptoms of common conditions, and health guidance. Just ask!"],
+      "context": [""]
+    },
+    {
+      "tag": "name_query",
+      "patterns": ["What is your name?", "Who are you?", "Your name please"],
+      "responses": ["I'm Jarvis, your medical assistant bot.", "They call me Jarvis - here to help!"],
+      "context": [""]
+    },
+    {
+      "tag": "bot_age",
+      "patterns": ["How old are you?", "When were you created?", "Since when are you active?"],
+      "responses": ["I'm always learning - let's say I'm timeless!", "Age doesn't matter when you're digital!"],
+      "context": [""]
+    },
+    {
+      "tag": "cold",
+      "patterns": ["I have a cold", "Catching a cold", "Cold symptoms", "How to get rid of cold?", "Running nose and cold"],
+      "responses": ["Cold is a common viral infection. Rest, fluids, and steam inhalation can help."],
+      "context": [""]
+    },
+    {
+      "tag": "cough",
+      "patterns": ["Why am I coughing?", "Cough won't stop", "Dry cough?", "Wet cough remedies", "Persistent cough issue"],
+      "responses": ["Cough can be due to a cold, throat irritation, or infection. Drink warm fluids and rest."],
+      "context": [""]
+    },
+    {
+      "tag": "sore_throat",
+      "patterns": ["My throat hurts", "Why is my throat sore?", "Throat pain while swallowing", "Sore throat remedies"],
+      "responses": ["A sore throat can be caused by a viral infection or dryness. Warm salt water gargles may help."],
+      "context": [""]
+    },
+    {
+      "tag": "fever",
+      "patterns": ["I have a fever", "Feeling hot and cold", "Body temperature is high", "Fever symptoms?"],
+      "responses": ["Fever is the body's response to infection. Rest, stay hydrated, and take paracetamol if needed."],
+      "context": [""]
+    },
+    {
+      "tag": "headache",
+      "patterns": ["I have a headache", "Head pain", "Why does my head hurt?", "Migraine vs headache"],
+      "responses": ["Headaches can be due to stress, dehydration, or illness. Resting and staying hydrated can help."],
+      "context": [""]
+    },
+    {
+      "tag": "ear_pain",
+      "patterns": ["My ear hurts", "Pain in the ear", "Earache remedy", "Sharp ear pain"],
+      "responses": ["Ear pain may be caused by infection or wax build-up. Use warm compress and consult a doctor if severe."],
+      "context": [""]
+    },
+    {
+      "tag": "runny_nose",
+      "patterns": ["My nose is running", "Why do I have a runny nose?", "Constant dripping nose", "Runny nose remedy"],
+      "responses": ["A runny nose is usually due to a cold or allergy. Steam inhalation and rest help relieve it."],
+      "context": [""]
+    },
+    {
+      "tag": "sneezing",
+      "patterns": ["I keep sneezing", "Why am I sneezing a lot?", "Frequent sneezing issue", "Sneezing and watery eyes"],
+      "responses": ["Sneezing can be due to allergies or cold. Try to avoid dust and use antihistamines if needed."],
+      "context": [""]
+    },
+    {
+      "tag": "voice_problem",
+      "patterns": ["My voice sounds weird", "Voice is not clear", "Why is my voice hoarse?", "Voice change treatment"],
+      "responses": ["Hoarseness may be from overuse, cold, or throat irritation. Voice rest and warm drinks help."],
+      "context": [""]
+    },
+    {
+      "tag": "ear_infection",
+      "patterns": ["What is an ear infection?", "Tell me about ear infection", "How to treat ear infection?", "Symptoms of ear infection?"],
+      "responses": ["An ear infection is usually caused by bacteria or viruses affecting the middle ear, leading to pain and sometimes fever."],
+      "context": [""]
+    },
+    {
+      "tag": "cold_allergy",
+      "patterns": ["What is a cold allergy?", "Why do I sneeze in the morning?", "Symptoms of cold allergy?", "How to prevent cold allergy?"],
+      "responses": ["Cold allergy or allergic rhinitis causes sneezing, runny nose, and watery eyes due to allergens like dust or pollen."],
+      "context": [""]
+    },
+    {
+      "tag": "nosebleed",
+      "patterns": ["Why is my nose bleeding?", "What causes nosebleeds?", "How to stop a nosebleed?", "Is nosebleed serious?"],
+      "responses": ["Nosebleeds can be caused by dry air, nose picking, injury, or high blood pressure. Lean forward and pinch your nose to stop it."],
+      "context": [""]
+    },
+    {
+      "tag": "blocked_nose",
+      "patterns": ["Why is my nose blocked?", "How to clear blocked nose?", "Reasons for nasal congestion?", "Treatment for stuffy nose?"],
+      "responses": ["A blocked nose can be caused by cold, allergy, or sinus infection. Steam inhalation or nasal sprays may help."],
+      "context": [""]
+    },
+    {
+      "tag": "tonsil_swelling",
+      "patterns": ["What causes swollen tonsils?", "My tonsils are enlarged", "Why are my tonsils swollen?", "How to reduce tonsil swelling?"],
+      "responses": ["Swollen tonsils are often due to infection and may cause difficulty in swallowing and fever."],
+      "context": [""]
+    },
+    {
+      "tag": "hearing_loss",
+      "patterns": ["Why can't I hear properly?", "Causes of hearing loss?", "Is hearing loss permanent?", "How to improve hearing?"],
+      "responses": ["I'm sorry, I don't understand. Can you rephrase?"],
+      "context": [""]
+    },
+    {
+      "tag": "ringing_in_ears",
+      "patterns": ["Why do I hear ringing in my ears?", "What is tinnitus?", "Is ringing in ears normal?", "Treatment for ear ringing?"],
+      "responses": ["Ringing in the ears, also called tinnitus, can be caused by loud noise, infections, or ear problems."],
+      "context": [""]
+    },
+    {
+      "tag": "throat_pain",
+      "patterns": ["My throat hurts while swallowing", "What causes throat pain?", "Pain in throat treatment?", "Remedy for throat pain?"],
+      "responses": ["Throat pain is usually due to infections, irritation, or dryness. Warm fluids and lozenges can help."],
+      "context": [""]
+    },
+    {
+      "tag": "common_cold",
+      "patterns": ["Tell me about common cold", "What causes cold?", "Cold symptoms and treatment?", "How to cure cold fast?"],
+      "responses": ["The common cold is caused by a viral infection, leading to sneezing, cough, sore throat, and runny nose."],
+      "context": [""]
+    },
+    {
+      "tag": "watery_ears",
+      "patterns": ["Why is fluid coming from my ear?", "Ear discharge causes?", "Watery fluid from ears?", "Is ear discharge normal?"],
+      "responses": ["Ear discharge or fluid can be due to infection, injury, or ear drum rupture. Consult a doctor for proper treatment."],
+      "context": [""]
+    },
+    {
+      "tag": "voice_change",
+      "patterns": ["Why has my voice changed?", "Voice is hoarse", "What causes hoarse voice?", "How to treat voice change?"],
+      "responses": ["Voice changes can occur due to cold, throat infection, overuse of voice, or vocal cord issues."],
+      "context": [""]
+    },
+    {
+      "tag": "snoring_problem",
+      "patterns": ["Why do I snore?", "Causes of snoring?", "How to stop snoring?", "Is snoring bad?"],
+      "responses": ["Snoring is caused by vibration of tissues in the throat during sleep, often due to blocked nose or obesity."],
+      "context": [""]
+    },
+    {
+      "tag": "dry_throat",
+      "patterns": ["Why is my throat dry?", "How to fix dry throat?", "Dryness in throat cause?", "Treatment for dry throat?"],
+      "responses": ["Dry throat can be due to dehydration, dry weather, or mouth breathing. Drinking water and using humidifiers may help."],
+      "context": [""]
+    },
+    {
+      "tag": "loss_of_smell",
+      "patterns": ["Why can't I smell anything?", "Loss of smell causes?", "What causes anosmia?", "How to treat loss of smell?"],
+      "responses": ["Loss of smell can be caused by cold, sinus issues, nasal polyps, or infections like COVID-19."],
+      "context": [""]
+    },
+    {
+      "tag": "bad_breath",
+      "patterns": ["Why does my breath smell?", "Causes of bad breath?", "How to get rid of bad breath?", "Bad breath treatment?"],
+      "responses": ["Bad breath, or halitosis, can result from poor oral hygiene, infections, or certain foods."],
+      "context": [""]
+    },
+    {
+      "tag": "mouth_ulcers",
+      "patterns": ["Why do I get mouth ulcers?", "Causes of mouth sores?", "How to treat mouth ulcers?", "Painful mouth ulcers remedy?"],
+      "responses": ["Mouth ulcers can be due to stress, injury, vitamin deficiency, or infections. Most heal on their own."],
+      "context": [""]
+    },
+    {
+      "tag": "difficulty_swallowing",
+      "patterns": ["Why is it hard to swallow?", "What causes difficulty in swallowing?", "Pain while swallowing?", "Swallowing problems?"],
+      "responses": ["Difficulty swallowing can be due to sore throat, infection, or more serious conditions like tumors."],
+      "context": [""]
+    },
+    {
+      "tag": "swollen_lymph_nodes",
+      "patterns": ["Why are my neck glands swollen?", "What causes swollen lymph nodes?", "Swollen neck nodes treatment?", "Is it serious?"],
+      "responses": ["Swollen lymph nodes often result from infection and usually go away as the body heals."],
+      "context": [""]
+    },
+    {
+      "tag": "ear_wax_blockage",
+      "patterns": ["Why is my ear blocked?", "How to remove ear wax?", "Ear feels full", "Wax in ear treatment?"],
+      "responses": ["Earwax buildup can block the ear canal and cause hearing issues. It can be softened with drops or removed by a doctor."],
+      "context": [""]
+    },
+    {
+      "tag": "throat_infection",
+      "patterns": ["What causes throat infection?", "How to treat throat infection?", "Pain in throat with fever", "Is my throat infected?"],
+      "responses": ["Throat infections are usually viral or bacterial and can cause soreness, redness, and fever."],
+      "context": [""]
+    },
+    {
+      "tag": "swollen_glands",
+      "patterns": ["My glands are swollen", "Why is my neck swollen?", "Swollen glands in throat", "Lump in neck causes?"],
+      "responses": ["Swollen glands in the neck may be due to infection, inflammation, or sometimes tumors. A check-up is advised."],
+      "context": [""]
+    },
+    {
+      "tag": "headache_sinus",
+      "patterns": ["Why do I have a headache with stuffy nose?", "Sinus headache symptoms", "Sinus pressure and pain", "How to relieve sinus headache?"],
+      "responses": ["Sinus headaches are caused by inflammation in sinus passages, leading to facial pain and pressure. Steam and nasal sprays may help."],
+      "context": [""]
+    },
+    {
+      "tag": "sleep_apnea",
+      "patterns": ["Why do I stop breathing during sleep?", "What is sleep apnea?", "How is sleep apnea treated?", "Is sleep apnea dangerous?"],
+      "responses": ["Sleep apnea is a condition where breathing stops and starts during sleep. It may need lifestyle changes or devices like CPAP."],
+      "context": [""]
+    },
+    {
+      "tag": "neck_pain",
+      "patterns": ["Why does my neck hurt?", "Causes of neck pain?", "Neck pain treatment?", "Is neck pain related to throat issues?"],
+      "responses": ["Neck pain can result from infections, strained muscles, or posture issues. Throat infections can sometimes spread to the neck."],
+      "context": [""]
+    },
+    {
+      "tag": "difficulty_breathing",
+      "patterns": ["Why can't I breathe easily?", "Breathing problem causes?", "Shortness of breath reasons?", "Trouble breathing remedy?"],
+      "responses": ["Breathing difficulty can be caused by nose blockage, throat swelling, or lung issues. Seek medical help if severe."],
+      "context": [""]
+    },
+    {
+      "tag": "dry_cough",
+      "patterns": ["Why do I have dry cough?", "Dry cough without fever?", "Persistent dry cough causes?", "How to stop dry cough?"],
+      "responses": ["Dry cough can result from throat irritation, allergies, or infections. Staying hydrated and using lozenges can help."],
+      "context": [""]
+    },
+    {
+      "tag": "throat_lump_feeling",
+      "patterns": ["I feel something stuck in my throat", "Lump in throat sensation?", "Why do I feel a throat blockage?", "Throat lump feeling but nothing there?"],
+      "responses": ["A feeling of lump in throat can be due to anxiety, inflammation, or reflux. It's usually not serious."],
+      "context": [""]
+    },
+    {
+      "tag": "post_nasal_drip",
+      "patterns": ["Why do I feel mucus in my throat?", "What is post nasal drip?", "Mucus dripping into throat", "Treatment for post nasal drip?"],
+      "responses": ["Post nasal drip happens when excess mucus runs down the back of the throat. Allergies or colds can cause it."],
+      "context": [""]
+    },
+    {
+      "tag": "nose_bleeding",
+      "patterns": ["Why is my nose bleeding?", "Causes of nosebleeds?", "What to do when nose bleeds?", "How to stop nose bleeding?"],
+      "responses": ["Nosebleeds can be caused by dry air, nose picking, injury, or high blood pressure. Pinching the nose and leaning forward helps."],
+      "context": [""]
+    },
+    {
+      "tag": "tonsillitis",
+      "patterns": ["What is tonsillitis?", "Tonsils are swollen", "Symptoms of tonsillitis?", "Tonsillitis treatment?"],
+      "responses": ["Tonsillitis is inflammation of the tonsils caused by infection, leading to sore throat, fever, and difficulty swallowing."],
+      "context": [""]
+    },
+    {
+      "tag": "hearing_loss",
+      "patterns": ["Why can't I hear well?", "Hearing loss causes?", "How to fix hearing loss?", "Sudden hearing loss?"],
+      "responses": ["Hearing loss can be due to age, noise exposure, earwax buildup, or infection. Early diagnosis is important."],
+      "context": [""]
+    },
+    {
+      "tag": "throat_cancer_warning",
+      "patterns": ["What are signs of throat cancer?", "Throat cancer symptoms?", "Should I worry about my throat lump?", "Persistent hoarseness cause?"],
+      "responses": ["Signs like hoarseness, lump in neck, pain while swallowing, and weight loss may be warning signs. See a doctor promptly."],
+      "context": [""]
+    },
+    {
+      "tag": "tongue_ulcers",
+      "patterns": ["Why are there ulcers on my tongue?", "Painful tongue sores", "How to cure tongue ulcers?", "Tongue burning sensation?"],
+      "responses": ["Tongue ulcers can be due to vitamin deficiency, stress, or injury. They usually heal within a week or two."],
+      "context": [""]
+    },
+    {
+      "tag": "voice_loss",
+      "patterns": ["Why have I lost my voice?", "Can't speak clearly", "Temporary voice loss cause?", "Treatment for voice loss?"],
+      "responses": ["Voice loss often results from vocal cord strain, infections, or laryngitis. Resting your voice helps recovery."],
+      "context": [""]
+    },
+    {
+      "tag": "nose_swelling",
+      "patterns": ["Why is my nose swollen?", "Swelling in nose tip", "What causes nasal swelling?", "Nose swelling without injury?"],
+      "responses": ["Swelling in the nose can happen due to infection, injury, or allergies. Cold compress and anti-inflammatory medicine may help."],
+      "context": [""]
+    },
+    {
+      "tag": "ear_ringing",
+      "patterns": ["Why is my ear ringing?", "What is tinnitus?", "Ringing in ears causes?", "How to treat ear ringing?"],
+      "responses": ["Ringing in the ears, known as tinnitus, can result from ear damage, infections, or exposure to loud sounds."],
+      "context": [""]
+    },
+    {
+      "tag": "mouth_dryness",
+      "patterns": ["Why is my mouth always dry?", "Dry mouth causes?", "Dry mouth while sleeping?", "How to treat dry mouth?"],
+      "responses": ["Dry mouth can be caused by dehydration, medications, or breathing through the mouth. Drinking water helps relieve it."],
+      "context": [""]
+    },
+    {
+      "tag": "ear_blocked_pressure",
+      "patterns": ["Why do my ears feel blocked?", "Ear feels full after flight", "Ear pressure while traveling", "How to equalize ear pressure?"],
+      "responses": ["Ear pressure is often due to changes in altitude or sinus blockage. Swallowing or yawning may help."],
+      "context": [""]
+    },
+    {
+      "tag": "hoarseness",
+      "patterns": ["Why is my voice hoarse?", "Hoarse voice causes?", "How to treat hoarseness?", "Voice not clear?"],
+      "responses": ["Hoarseness can result from vocal strain, infection, or allergies. Resting your voice usually helps."],
+      "context": [""]
+    },
+    {
+      "tag": "facial_pain",
+      "patterns": ["Why is my face hurting?", "Pain in cheeks and forehead", "What causes facial pain?", "Facial pressure treatment?"],
+      "responses": ["Facial pain is often linked to sinus infection, dental issues, or nerve conditions like trigeminal neuralgia."],
+      "context": [""]
+    },
+    {
+      "tag": "lump_neck",
+      "patterns": ["Why do I have a lump in my neck?", "Neck swelling causes?", "Lump near jaw?", "Is neck lump dangerous?"],
+      "responses": ["A lump in the neck could be due to swollen glands, infection, or other issues. It's best to consult a doctor."],
+      "context": [""]
+    },
+    {
+      "tag": "cough_with_mucus",
+      "patterns": ["Why am I coughing up mucus?", "Mucus cough causes?", "Thick mucus when coughing?", "Treatment for wet cough?"],
+      "responses": ["Coughing up mucus may be due to respiratory infection, allergies, or sinus issues. Staying hydrated helps."],
+      "context": [""]
+    },
+    {
+      "tag": "pain_swallowing",
+      "patterns": ["Why does it hurt to swallow?", "Pain when I eat or drink", "Swallowing difficulty causes?", "Painful throat while eating?"],
+      "responses": ["Painful swallowing may be caused by infection, inflammation, or injury. Gargling and medication can help relieve it."],
+      "context": [""]
+    },
+    {
+      "tag": "sneezing_allergy",
+      "patterns": ["I keep sneezing a lot", "Why do I sneeze all the time?", "Allergy sneezing cause?", "Sneezing remedy?"],
+      "responses": ["Frequent sneezing is often due to allergic reactions. Staying away from triggers and using antihistamines may help."],
+      "context": [""]
+    }
+  ]
+}
